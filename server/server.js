@@ -11,6 +11,10 @@ const {home} = require("./controller/pageCtrl.js")
 
 app.get("/", home)
 
+// app.get('/js', scriptServe)
+
+app.get('css', cssServe)
+
 
 
 
