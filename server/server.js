@@ -13,7 +13,7 @@ app.get("/", home)
 
 // app.get('/js', scriptServe)
 
-//app.get("css", cssServe)
+app.get("/css", cssServe)
 
 
 
