@@ -22,12 +22,14 @@ module.exports = {
 
          
         if (id === 1){
-            console.log(path.join(__dirname, '../../cat.jpg'))
-            res.status(200).send(path.join(__dirname, '../../cat.jpg'))
+            //console.log(path.join(__dirname, '../../cat.jpg'))
+            res.status(200).send("https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSi7XATb8vn4BvfKiH-gEUWWPBH7VDr-tfD9QIseL6KkeFnLDwAmExaQlzzq9VbTmHRIIBSUxoB4YgMyMTr6ARWYTbjFcRUT2V4Axjf9fQ")
         }
         else if (id === 2){
-            console.log(path.join(__dirname, '../../dog.jpg'))
-            res.status(200).send(path.join(__dirname, '../../dog.jpg'))
+            //console.log(path.join(__dirname, '../../dog.jpg'))
+            res.status(200).send(
+                "https://media.istockphoto.com/photos/cat-astronaut-in-space-on-background-of-the-globe-elements-of-this-picture-id898916122?k=20&m=898916122&s=612x612&w=0&h=AW5wKUM_nKadrlx4liYI8AQnPxNkZ81wHWKJf1l2ZqA="
+                )
         }
         else {
             res.status(404).send()
