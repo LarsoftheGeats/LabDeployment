@@ -12,9 +12,8 @@ function changeImage (evt) {
         axios.get("pic/1")
         .then( (res) => {
             
-            console.log(res)
+            console.log(res.data)
             picture.src = res.data
-            alert(picture.src)
         })
         .catch(( err) => {
             alert(err)
@@ -23,9 +22,8 @@ function changeImage (evt) {
     else{
         axios.get("pic/2")
         .then( (res) => {
-            console.log(res)
+            console.log(res.data)
             picture.src = res.data
-            alert(picture)
         })
         .catch(( err) => {
             alert(err)
